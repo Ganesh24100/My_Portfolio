@@ -124,7 +124,7 @@ const ProjectCard = ({ project, darkMode, setDarkMode }) => {
         <Description>{project.description}</Description>
       </Details>
       <div className="project-button">
-        {
+        {/* {
           project.github &&
         <LinkButton
         href={project.github}
@@ -133,7 +133,7 @@ const ProjectCard = ({ project, darkMode, setDarkMode }) => {
         >
           IOS <ImLink />
         </LinkButton>
-        }
+        } */}
         {
           project.webapp &&
         <LinkButton
@@ -141,7 +141,7 @@ const ProjectCard = ({ project, darkMode, setDarkMode }) => {
         target="_blank"
         className="link-button"
         >
-         {project.isWeb ? 'Web' :'Android'}  <ImLink />
+         {project.category==='web app' ? 'Web' :'Android'}  <ImLink />
         </LinkButton>
         }
       </div>
